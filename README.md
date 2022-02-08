@@ -1,6 +1,20 @@
 ### SHRDC Custom Frappe Docker
 - Apps included: Frappe, ERPNext, Metabase Integration.
-- Clone this repo and run `docker-compose up -d` to run all the docker containers
+
+### Setup
+1. Clone this repo in a directory of your choice
+- `git clone <url of this repo>`
+
+2. Navigate into the `shrdc_custom_frappe_docker` directory
+- `cd shrdc_custom_frappe_docker`
+
+3. Copy environment variables from the `env-example` file.
+- `cp env-example .env`
+
+4. Start all the docker containers. Note: Replace `<project_name>` to your preference.
+- `docker-compose --project-name <project_name> up -d`
+
+
 
 ### Introduction
 
