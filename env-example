@@ -1,0 +1,11 @@
+LETSENCRYPT_EMAIL=email@example.com
+ERPNEXT_VERSION=version-12
+FRAPPE_VERSION=version-12
+MARIADB_HOST=mariadb
+MYSQL_ROOT_PASSWORD=admin
+SITE_NAME=mysite7_1.localhost
+SITES=`mysite7_1.localhost`
+DB_ROOT_USER=root
+ADMIN_PASSWORD=admin
+INSTALL_APPS=erpnext,metabase_integration
+ENTRYPOINT_LABEL=traefik.http.routers.excel-erpnext-nginx.entrypoints=web
