@@ -1,6 +1,6 @@
 ### SHRDC Custom Frappe Docker
-Apps included: Frappe, ERPNext, Metabase Integration.
-Clone this repo and run `docker-compose up -d` to run all the docker containers
+- Apps included: Frappe, ERPNext, Metabase Integration.
+- Clone this repo and run `docker-compose up -d` to run all the docker containers
 
 ### Introduction
 
