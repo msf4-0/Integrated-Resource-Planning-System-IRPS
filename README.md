@@ -1,6 +1,6 @@
 ### SHRDC Custom Frappe Docker
 - Prerequisites: Docker Engine, Docker Compose
-- Apps included: Frappe, ERPNext, Metabase Integration.
+- Frappe Apps included: ERPNext, Metabase Integration.
 
 ### Setup
 1. Clone this repo in a directory of your choice
