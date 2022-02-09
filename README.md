@@ -15,6 +15,11 @@
 4. Start all the docker containers. Note: Replace `<project_name>` to your preference.
 - `docker-compose --project-name <project_name> up -d`
 
+5. Monitor the site creation progress by logging the `<project_name>_site-creator_1` container.
+- `docker logs <project_name>_site-creator_1 -f`
+
+6. After the `<project_name>_site-creator_1` container exited, you can access ERPNext via `mysite.localhost` or whatever you have set in the `.env` file.
+
 
 
 ### Introduction
