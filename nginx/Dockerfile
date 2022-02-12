@@ -2,6 +2,9 @@ ARG FRAPPE_BRANCH=develop
 FROM node:14-buster
 ARG FRAPPE_BRANCH=develop
 
+ARG GITHUB_OWNER=default_github_owner # you could give a default value as well
+ENV GITHUB_OWNER=$GITHUB_OWNER
+
 COPY install_frappe.sh /install_frappe
 COPY install_erpnext.sh /install_erpnext
 COPY install_app.sh /install_app
