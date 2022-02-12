@@ -10,3 +10,4 @@ ADMIN_PASSWORD=admin
 INSTALL_APPS=erpnext,metabase_integration,bench_manager
 ENTRYPOINT_LABEL=traefik.http.routers.excel-erpnext-nginx.entrypoints=web
 DOCKER_USERNAME=chiajunshen
+SERVER_PORT=8000
