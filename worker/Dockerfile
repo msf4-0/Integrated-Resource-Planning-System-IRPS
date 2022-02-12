@@ -1,4 +1,5 @@
 ARG FRAPPE_BRANCH=develop
+ARG GITHUB_OWNER=default_github_owner
 FROM frappe/erpnext-worker:${FRAPPE_BRANCH}
 
 RUN install_app metabase_integration https://github.com/${GITHUB_OWNER}/shrdc_frappe_metabase master && \
