@@ -16,6 +16,11 @@ Target:
 
 ### Setup
 #### Ubuntu: create a new user then add to docker group, then open new project folder...
+- `sudo adduser frappe`
+- `su - frappe`
+- `mkdir frappe_docker`
+- `cd frappe_docker`
+- `git clone https://github.com/chiajunshen/shrdc_custom_frappe_docker.git`
 
 
 1. Clone this repo in a directory of your choice
