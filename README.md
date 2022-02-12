@@ -53,11 +53,11 @@ Execute from root of app repo
 For nginx:
 
 ```shell
-# For edge
-docker build -t custom-erpnext-nginx:latest nginx
-
 # For version-12
-docker build --build-arg=FRAPPE_BRANCH=version-12 -t custom-erpnext-nginx:v12 nginx
+docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=<github-username> -t custom-erpnext-nginx:v12 nginx
+
+# Example:
+docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=chiajunshen -t custom-erpnext-nginx:version-12 nginx
 ```
 
 For worker:
