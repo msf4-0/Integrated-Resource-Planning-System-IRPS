@@ -17,7 +17,7 @@ services:
       # enable traefik
       - "traefik.enable=true"
     ports:
-      - "80:80"
+      - "${SERVER_PORT}:80"
       - "443:443"
     volumes:
       - cert-vol:/letsencrypt
@@ -36,6 +36,9 @@ services:
       - "traefik.http.routers.custom-erpnext-nginx.rule=Host(${SITES})"
       - "${ENTRYPOINT_LABEL}"
       - "traefik.http.services.custom-erpnext-nginx.loadbalancer.server.port=8080"
+      - "traefik.http.routers.custom-erpnext-nginx.rule=HostRegexp(`{catchall:.*}`)"
+      - "traefik.http.middlewares.custom-erpnext-nginx.headers.customrequestheaders.Host=custom-erpnext-nginx"
+      - "traefik.http.routers.custom-erpnext-nginx.middlewares=custom-erpnext-nginx"
     volumes:
       - sites-vol:/var/www/html/sites:rw
       - assets-vol:/assets:rw
