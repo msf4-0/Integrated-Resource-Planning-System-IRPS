@@ -15,6 +15,9 @@ Target:
 - Frappe Apps included: ERPNext, Metabase Integration.
 
 ### Setup
+#### Ubuntu: create a new user then add to docker group, then open new project folder...
+
+
 1. Clone this repo in a directory of your choice
 - `git clone <url of this repo>`
 
