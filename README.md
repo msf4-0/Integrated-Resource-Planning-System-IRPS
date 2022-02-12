@@ -73,3 +73,6 @@ docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=chiaj
 ### 3. Push images to Docker Hub
 may face `denied: requested access to the resource is denied` error
 Execute from root of app repo: `docker login` log into the Docker Hub in which you want to push the images to
+
+### 4. Configure `env-example`
+change DOCKER_USERNAME to the username of the Docker Hub in which you have pushed to images to
