@@ -34,8 +34,6 @@ Target:
 
 ### For Developer:
 
-Ensure you have a valid `GITHUB_OWNER` in the `env-example` file and have this file copied to `.env`.
-
 ### Introduction
 
 - Fork this repo to build your own image with ERPNext and list of custom Frappe apps.
@@ -58,20 +56,15 @@ docker build -t custom-erpnext-nginx:latest nginx
 
 # For version-12
 docker build --build-arg=FRAPPE_BRANCH=version-12 -t custom-erpnext-nginx:v12 nginx
-
-# For version-13
-docker build --build-arg=FRAPPE_BRANCH=version-13 -t custom-erpnext-nginx:v13 nginx
 ```
 
 For worker:
 
 ```shell
-# For edge
-docker build -t custom-erpnext-worker:latest worker
-
 # For version-12
-docker build --build-arg=FRAPPE_BRANCH=version-12 -t custom-erpnext-worker:v12 worker
+docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=<github-username> -t custom-erpnext-worker:version-12 worker
 
-# For version-13
-docker build --build-arg=FRAPPE_BRANCH=version-13 -t custom-erpnext-worker:v13 worker
+# Example:
+docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=chiajunshen -t custom-erpnext-worker:version-12 worker
+
 ```
