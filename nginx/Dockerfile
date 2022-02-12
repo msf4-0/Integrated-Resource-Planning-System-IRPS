@@ -17,7 +17,6 @@ RUN /install_frappe ${FRAPPE_BRANCH} && \
   # Install required apps with following command
   # /install_app <app_name> <repo> <app_branch>
   /install_app metabase_integration https://github.com/${GITHUB_OWNER}/shrdc_frappe_metabase master && \
-  /install_app bench_manager https://github.com/${GITHUB_OWNER}/shrdc_bench_manager version-12 && \
   /install_app erpnext_telegram_integration https://github.com/${GITHUB_OWNER}/shrdc_erpnext_telegram master && \
   /install_app barcode_shrdc https://github.com/leexy0/barcode_shrdc master && \
   /install_app frepple https://github.com/Drayang/ERPNext-Frepple master && \
@@ -30,7 +29,7 @@ COPY --from=0 /home/frappe/frappe-bench/sites/ /var/www/html/
 COPY --from=0 /rsync /rsync
 
 # Append list of installed to apps.txt
-RUN echo -n "metabase_integration\nbench_manager" >> /var/www/html/apps.txt
+RUN echo -n "metabase_integration\nerpnext_telegram_integration\nbarcode_shrdc\nfrepple\nmy_custom_maintenance" >> /var/www/html/apps.txt
 
 VOLUME [ "/assets" ]
 
