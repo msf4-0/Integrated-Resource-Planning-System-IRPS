@@ -33,6 +33,9 @@ Target:
 
 
 ### For Developer:
+
+Ensure you have a valid `GITHUB_OWNER` in the `env-example` file and have this file copied to `.env`.
+
 ### Introduction
 
 - Fork this repo to build your own image with ERPNext and list of custom Frappe apps.
