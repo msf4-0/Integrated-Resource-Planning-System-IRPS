@@ -1,4 +1,4 @@
-#### For ERPNext User:
+## For ERPNext User:
 
 Target:
 - ERPNext
@@ -34,7 +34,7 @@ Target:
 
 
 
-#### For Developer (get this done asap):
+## For Developer (get this done asap):
 
 ### Introduction
 
