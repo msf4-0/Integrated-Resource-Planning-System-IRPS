@@ -5,7 +5,6 @@ ARG GITHUB_OWNER=default_github_owner # you could give a default value as well
 ENV GITHUB_OWNER=$GITHUB_OWNER
 
 RUN install_app metabase_integration https://github.com/${GITHUB_OWNER}/shrdc_frappe_metabase master && \
-  install_app bench_manager https://github.com/${GITHUB_OWNER}/shrdc_bench_manager version-12 && \
   install_app erpnext_telegram_integration https://github.com/${GITHUB_OWNER}/shrdc_erpnext_telegram master && \
   install_app barcode_shrdc https://github.com/leexy0/barcode_shrdc master && \
   install_app frepple https://github.com/Drayang/ERPNext-Frepple master && \
