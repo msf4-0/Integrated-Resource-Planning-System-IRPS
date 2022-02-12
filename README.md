@@ -22,7 +22,7 @@ Target:
 - `cd shrdc_custom_frappe_docker`
 
 3. Copy environment variables from the `env-example` file.
-- `cp env-example .env`
+- `cp env-example .env` talk about the variable that can be changed...
 
 4. Start all the docker containers. Note: Replace `<project_name>` to your preference.
 - `docker-compose --project-name <project_name> up -d`
@@ -36,7 +36,7 @@ Target:
 
 ## For Developer (get this done asap):
 
-### Introduction
+### 1. Introduction
 
 - Fork this repo to build your own image with ERPNext and list of custom Frappe apps.
 - Change `nginx/Dockerfile` and add required apps. Refer comments in the file.
@@ -46,7 +46,7 @@ Example file uses following apps:
 
 - https://github.com/pipech/frappe-metabase
 
-### Build images
+### 2. Build images
 
 Execute from root of app repo
 
@@ -68,5 +68,8 @@ docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=<gith
 
 # Example:
 docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=chiajunshen -t custom-erpnext-worker:version-12 worker
-
 ```
+
+### 3. Push images to Docker Hub
+may face `denied: requested access to the resource is denied` error
+Execute from root of app repo: `docker login` log into the Docker Hub in which you want to push the images to
