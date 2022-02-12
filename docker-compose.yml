@@ -46,7 +46,6 @@ services:
   erpnext-python:
     image: ${DOCKER_USERNAME}/custom-erpnext-worker:${ERPNEXT_VERSION}
     restart: on-failure
-    command: chown -R frappe:frappe /home/frappe/frappe-bench/sites
     environment:
       - MARIADB_HOST=${MARIADB_HOST}
       - REDIS_CACHE=redis-cache:6379
@@ -151,7 +150,7 @@ services:
       - ADMIN_PASSWORD=${ADMIN_PASSWORD}
       - INSTALL_APPS=${INSTALL_APPS}
     volumes:
-      - sites-vol:/home/frappe/frappe-bench/sites:rw
+      - sites-vol:/home/frappe/frappe-bench/sites
 
 volumes:
   mariadb-vol:
