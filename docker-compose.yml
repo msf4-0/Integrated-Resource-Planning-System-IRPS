@@ -150,7 +150,7 @@ services:
       - ADMIN_PASSWORD=${ADMIN_PASSWORD}
       - INSTALL_APPS=${INSTALL_APPS}
     volumes:
-      - sites-vol:/home/frappe/frappe-bench/sites
+      - sites-vol:/home/frappe/frappe-bench/sites:rw
 
 volumes:
   mariadb-vol:
