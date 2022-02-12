@@ -7,7 +7,7 @@ SITE_NAME=custom-erpnext-nginx
 SITES=`custom-erpnext-nginx`
 DB_ROOT_USER=root
 ADMIN_PASSWORD=admin
-INSTALL_APPS=erpnext,metabase_integration,bench_manager,erpnext_telegram_integration,barcode_shrdc,frepple,my_custom_maintenance
+INSTALL_APPS=erpnext,metabase_integration,erpnext_telegram_integration,barcode_shrdc,frepple,my_custom_maintenance
 ENTRYPOINT_LABEL=traefik.http.routers.excel-erpnext-nginx.entrypoints=web
 DOCKER_USERNAME=shrdc
 SERVER_PORT=8000
