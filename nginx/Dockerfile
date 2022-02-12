@@ -13,8 +13,8 @@ RUN /install_frappe ${FRAPPE_BRANCH} && \
   /install_erpnext && \
   # Install required apps with following command
   # /install_app <app_name> <repo> <app_branch>
-  /install_app metabase_integration https://github.com/chiajunshen/shrdc_frappe_metabase master && \
-  /install_app bench_manager https://github.com/chiajunshen/shrdc_bench_manager develop && \
+  /install_app metabase_integration https://github.com/${GITHUB_OWNER}/shrdc_frappe_metabase master && \
+  /install_app bench_manager https://github.com/${GITHUB_OWNER}/shrdc_bench_manager develop && \
   /prepare_production
 
 FROM frappe/erpnext-nginx:${FRAPPE_BRANCH}
