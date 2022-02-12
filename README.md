@@ -52,7 +52,12 @@ Target:
 
 Example file uses following apps:
 
-- https://github.com/pipech/frappe-metabase
+- https://github.com/chiajunshen/shrdc_frappe_metabase
+- https://github.com/chiajunshen/shrdc_bench_manager
+- https://github.com/chiajunshen/shrdc_erpnext_telegram
+- https://github.com/Drayang/ERPNext-Frepple
+- https://github.com/leexy0/barcode_shrdc
+- https://github.com/msf4-0/ERPNext_my_custom__maintenance
 
 ### 2. Build images
 
