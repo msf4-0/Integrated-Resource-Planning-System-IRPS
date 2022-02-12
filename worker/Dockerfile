@@ -1,6 +1,8 @@
 ARG FRAPPE_BRANCH=develop
-ARG GITHUB_OWNER=default_github_owner
 FROM frappe/erpnext-worker:${FRAPPE_BRANCH}
+
+ARG GITHUB_OWNER=default_github_owner # you could give a default value as well
+ENV GITHUB_OWNER=$GITHUB_OWNER
 
 RUN install_app metabase_integration https://github.com/${GITHUB_OWNER}/shrdc_frappe_metabase master && \
   install_app bench_manager https://github.com/${GITHUB_OWNER}/shrdc_bench_manager develop && \
