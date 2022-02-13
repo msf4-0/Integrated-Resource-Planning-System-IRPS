@@ -55,7 +55,6 @@ Target:
 Example file uses following apps:
 
 - https://github.com/chiajunshen/shrdc_frappe_metabase
-- https://github.com/chiajunshen/shrdc_bench_manager
 - https://github.com/chiajunshen/shrdc_erpnext_telegram
 - https://github.com/Drayang/ERPNext-Frepple
 - https://github.com/leexy0/barcode_shrdc
@@ -94,6 +93,6 @@ change DOCKER_USERNAME to the username of the Docker Hub in which you have pushe
 
 
 ## Contributors
-1. Drayang Chua Kai Yang
-2. Lee Xin Yue
-3. Chia Jun Shen
+1. Drayang Chua Kai Yang (https://github.com/Drayang)
+2. Lee Xin Yue (https://github.com/leexy0)
+3. Chia Jun Shen (https://github.com/chiajunshen)
