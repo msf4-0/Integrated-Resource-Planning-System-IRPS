@@ -93,6 +93,6 @@ change DOCKER_USERNAME to the username of the Docker Hub in which you have pushe
 
 
 ## Contributors
-1. Drayang Chua Kai Yang (https://github.com/Drayang)
-2. Lee Xin Yue (https://github.com/leexy0)
-3. Chia Jun Shen (https://github.com/chiajunshen)
+1. [Drayang Chua Kai Yang](https://github.com/Drayang)
+2. [Lee Xin Yue](https://github.com/leexy0)
+3. [Chia Jun Shen](https://github.com/chiajunshen)
