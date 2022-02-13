@@ -1,18 +1,8 @@
 ## For ERPNext User:
 
-Target:
-- ERPNext
-- Metabase Integration
-- Telegram Integration
-- shrdc_barcode
-- Frepple Integration
-- shrdc_cmms
-- Build a perfect image (expose mariadb port for Metabase)
-- Improve on Setup documentation
-
 ### SHRDC Custom Frappe Docker
 - Prerequisites: Docker Engine, Docker Compose
-- Frappe Apps included: ERPNext, Metabase Integration.
+- Frappe Apps included: ERPNext, Metabase Integration, Telegram Integration, Frepple Integration, Barcode SHRDC, CMMS SHRDC
 
 ### Setup
 #### Ubuntu: create a new user then add to docker group, then open new project folder...
