@@ -91,3 +91,9 @@ Execute from root of app repo: `docker login` log into the Docker Hub in which y
 
 ### 4. Configure `env-example`
 change DOCKER_USERNAME to the username of the Docker Hub in which you have pushed to images to
+
+
+## Contributors
+1. Drayang Chua Kai Yang
+2. Lee Xin Yue
+3. Chia Jun Shen
