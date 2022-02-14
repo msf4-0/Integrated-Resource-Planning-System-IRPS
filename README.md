@@ -21,16 +21,16 @@
 #### H4
 
 
-# For ERPNext User
+## For ERPNext User
 
-## 1. List of possible ERPNext docker setup
+### 1. List of possible ERPNext docker setup
 - Production Setup: Single Server Single Bench (follow the guide below)
 - [Production Setup: Single Server Multi Bench](https://github.com/chiajunshen/shrdc_frappe_docker/blob/main/docs/multi-bench.md)
 - [Production Setup: Multi Server Docker Swarm](https://github.com/chiajunshen/shrdc_frappe_docker/blob/main/docs/docker-swarm.md)
 - [Production Setup: Multi Server Kubernetes](https://helm.erpnext.com/)
 - [Development Setup: Source code access with VSCode](https://github.com/chiajunshen/shrdc_frappe_docker/tree/main/development)
 
-## 2. SHRDC Custom Frappe Docker
+### 2. SHRDC Custom Frappe Docker
 1. Prerequisites:
     - Windows: Docker Desktop
     - Ubuntu: Docker Engine, Docker Compose
@@ -47,7 +47,7 @@
 3. For Windows & MacOS user, start from `Section 3`.
 4. For Ubuntu user, start from `Section 4`.
 
-## 3. Pre-Setup: Windows/MacOS
+### 3. Pre-Setup: Windows/MacOS
 1. The setup guide is tested to work on `Windows 10`, `Ubuntu 18.04` and `macOS Mojave 10.14.6`
 
 2. For Windows and MacOS, create a folder.
@@ -56,7 +56,7 @@
 
 4. Go to `Section 5`.
 
-## 4. Pre-Setup: Ubuntu
+### 4. Pre-Setup: Ubuntu
 1. Open a terminal.
 
 2. Create a user called `frappe`. (You can give a name of your preference to replace `frappe`)
@@ -73,7 +73,7 @@
 
 6. Go to `Section 5`.
 
-## 5. Setup
+### 5. Setup
 
 1. Clone this repo.
 - `git clone https://github.com/chiajunshen/shrdc_custom_frappe_docker.git`
@@ -92,13 +92,13 @@
 
 5. After the `<project_name>_site-creator_1` container exited, open `Google Chrome`, you can access ERPNext via `localhost:8000`.
 
-# Backup
-# Restore
+## Backup
+## Restore
 
-# For Developer
+## For Developer
 - [Reference: Customizing your own shrdc custom frappe docker](https://docs.google.com/document/d/1XxOYM_qhZ0RGI60YM82XHOkEzrn8ywXC98i354Donjc/edit)
 
-## 1. Introduction
+### 1. Introduction
 
 - Fork this repo to build your own image with ERPNext and list of custom Frappe apps.
 - Change `nginx/Dockerfile` and add required apps. Refer comments in the file.
@@ -112,7 +112,7 @@ Example file uses following apps:
 - [Barcode SHRDC](https://github.com/leexy0/barcode_shrdc)
 - [Computerized Maintenance Management System (CMMS) SHRDC](https://github.com/msf4-0/ERPNext_my_custom__maintenance)
 
-## 2. Build images
+### 2. Build images
 
 Execute from root of app repo.
 
@@ -142,23 +142,23 @@ docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=chiaj
 docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=msf4-0 -t custom-erpnext-worker:version-12 worker
 ```
 
-## 3. Push images to Docker Hub
+### 3. Push images to Docker Hub
 1. [Steps to create a Docker Hub, and push images to it.](https://docs.docker.com/get-started/04_sharing_app/)
 2. Possible troubleshoot:
     1. When you face `denied: requested access to the resource is denied` when pushing images, run `docker login` and enter your credentials. Then push image again.
 
-## 4. (Optional) Configure `env-example`
+### 4. (Optional) Configure `env-example`
 1. You may need to change the `DOCKER_USERNAME` in `env-example` to the username of the Docker Hub account in which you have pushed your images to.
 2. Copy `env-example` into `.env` by running `cp env-example .env`.
 
-## 5. Start up
+### 5. Start up
 1. The following commands should be executed on the `~/some/path/shrdc_custom_frappe_docker` directory
 2. `docker-compose -p <project_name> up -d`
 3. `docker logs <project_name>_site-creator_1 -f`
     1. If you got a `no such container` error, you may need to change to `docker logs <project_name>-site-creator-1 -f`
 4. After the `site_creator` container exited, open a browser, you can access ERPNext on `localhost:8000`.
 
-# Contributors
+## Contributors
 1. [Drayang Chua Kai Yang](https://github.com/Drayang)
 2. [Lee Xin Yue](https://github.com/leexy0)
 3. [Chia Jun Shen](https://github.com/chiajunshen)
