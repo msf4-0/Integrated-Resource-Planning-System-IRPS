@@ -27,7 +27,7 @@
     - Computerized Maintenance Management System (CMMS) SHRDC
 
 3. For Windows & MacOS user, start from `Section 3`.
-4. For Ubuntu user, `start from Section 4`.
+4. For Ubuntu user, start from `Section 4`.
 
 ## 3. Pre-Setup: Windows/MacOS
 1. The setup guide is tested to work on `Windows 10`, `Ubuntu 18.04` and `macOS Mojave 10.14.6`
