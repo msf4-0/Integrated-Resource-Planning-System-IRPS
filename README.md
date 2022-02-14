@@ -78,6 +78,7 @@
 # Restore
 
 # For Developer
+- [Reference: Customizing your own shrdc custom frappe docker](https://docs.google.com/document/d/1XxOYM_qhZ0RGI60YM82XHOkEzrn8ywXC98i354Donjc/edit)
 
 ## 1. Introduction
 
