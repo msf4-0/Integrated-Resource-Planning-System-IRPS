@@ -26,37 +26,46 @@
     - Barcode SHRDC
     - Computerized Maintenance Management System (CMMS) SHRDC
 
-## 3. Setup
+3. For Windows & MacOS user, start from Section 3
+4. For Ubuntu 
+
+## 3. Windows Setup
 1. The setup guide is tested to work on `Windows 10`, `Ubuntu 18.04` and `macOS Mojave 10.14.6`
-2. Create a folder
-    1. Windows/Mac
-        - test
-    3. Ubuntu:
-        1. test
-#### Ubuntu: create a new user then add to docker group, then open new project folder...
+2. For Windows and MacOS, create a folder.
+
+## 4. Ubuntu Setup
+1. Open a terminal.
+
+2. Create a user called `frappe`. (You can give a name of your preference to replace `frappe`)
 - `sudo adduser frappe`
+
+3. You may be promted to give a password for the newly created user `frappe`. Remember this password, you will need it for the next step.
+
+4. Log into the user `frappe`
 - `su - frappe`
+
+5. Create a folder called `frappe_docker`. Again, folder name is of your preference. Navigate into the new directory.
 - `mkdir frappe_docker`
 - `cd frappe_docker`
+
+## 5. Universal Setup
+
+6. Clone this repo.
 - `git clone https://github.com/chiajunshen/shrdc_custom_frappe_docker.git`
 
+7. Copy environment variables from the `env-example` file into `.env` file.
+- `cp env-example .env`
 
-1. Clone this repo in a directory of your choice
-- `git clone <url of this repo>`
+8. Start all the docker containers. Note: Replace `<project_name>` to your preference.
+- `docker-compose -p <project_name> up -d`
+- For example, `docker-compose -p project1 up -d`
 
-2. Navigate into the `shrdc_custom_frappe_docker` directory
-- `cd shrdc_custom_frappe_docker`
-
-3. Copy environment variables from the `env-example` file.
-- `cp env-example .env` talk about the variable that can be changed...
-
-4. Start all the docker containers. Note: Replace `<project_name>` to your preference.
-- `docker-compose --project-name <project_name> up -d`
-
-5. Monitor the site creation progress by logging the `<project_name>_site-creator_1` container.
+9. Monitor the site creation progress by logging the `<project_name>_site-creator_1` container.
 - `docker logs <project_name>_site-creator_1 -f`
+- For example, `docker logs project1_site-creator_1 -f`
+- If you face `no such container` error, try with `docker logs project1-site-creator-1 -f`
 
-6. After the `<project_name>_site-creator_1` container exited, you can access ERPNext via `mysite.localhost` or whatever you have set in the `.env` file.
+10. After the `<project_name>_site-creator_1` container exited, open `Google Chrome`, you can access ERPNext via `localhost:8000`.
 
 ## Backup
 ## Restore
