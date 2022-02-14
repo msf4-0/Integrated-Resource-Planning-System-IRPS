@@ -15,6 +15,8 @@
     <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/chiajunshen/shrdc_custom_frappe_docker?color=blue" />
 </a>
 
+![GitHub Contributors Image](https://contrib.rocks/image?repo=chiajunshen/shrdc_custom_frappe_docker)
+
 # H1
 ## H2
 ### H3
