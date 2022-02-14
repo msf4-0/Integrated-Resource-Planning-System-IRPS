@@ -90,7 +90,8 @@ docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=msf4-
     1. When you face `denied: requested access to the resource is denied` when pushing images, run `docker login` and enter your credentials. Then push image again.
 
 ## 4. (Optional) Configure `env-example`
-1. You may need to change the `DOCKER_USERNAME` in `.env` to the username of the Docker Hub account in which you have pushed your images to.
+1. You may need to change the `DOCKER_USERNAME` in `env-example` to the username of the Docker Hub account in which you have pushed your images to.
+2. Copy `env-example` into `.env` by running `cp env-example .env`.
 
 ## 5. Start up
 1. The following commands should be executed on the `~/some/path/shrdc_custom_frappe_docker directory`
