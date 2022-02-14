@@ -6,11 +6,11 @@
 # For ERPNext User:
 
 # SHRDC Custom Frappe Docker
-1. This is a Single Server Single Bench Production Docker setup.
-2. Other setup guide:
-    1. Production Setup
-        1.Single Server Multi Bench
-        2.Multi Server Docker Swarm
+- This is a Single Server Single Bench Production Docker setup.
+- Other setup guide:
+    - Production Setup:
+        - Single Server Multi Bench
+        - Multi Server Docker Swarm
         3.Multi Server Kubernetes
 
 2. Prerequisites:
