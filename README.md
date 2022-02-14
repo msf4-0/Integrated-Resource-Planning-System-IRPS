@@ -26,14 +26,19 @@
     - Barcode SHRDC
     - Computerized Maintenance Management System (CMMS) SHRDC
 
-3. For Windows & MacOS user, start from Section 3
-4. For Ubuntu 
+3. For Windows & MacOS user, start from `Section 3`.
+4. For Ubuntu user, `start from Section 4`.
 
-## 3. Windows Setup
+## 3. Pre-Setup: Windows/MacOS
 1. The setup guide is tested to work on `Windows 10`, `Ubuntu 18.04` and `macOS Mojave 10.14.6`
+
 2. For Windows and MacOS, create a folder.
 
-## 4. Ubuntu Setup
+3. Open a terminal, navigate to the newly created folder.
+
+4. Go to `Section 5`.
+
+## 4. Pre-Setup: Ubuntu
 1. Open a terminal.
 
 2. Create a user called `frappe`. (You can give a name of your preference to replace `frappe`)
@@ -48,27 +53,29 @@
 - `mkdir frappe_docker`
 - `cd frappe_docker`
 
-## 5. Universal Setup
+6. Go to `Section 5`.
 
-6. Clone this repo.
+## 5. Setup
+
+1. Clone this repo.
 - `git clone https://github.com/chiajunshen/shrdc_custom_frappe_docker.git`
 
-7. Copy environment variables from the `env-example` file into `.env` file.
+2. Copy environment variables from the `env-example` file into `.env` file.
 - `cp env-example .env`
 
-8. Start all the docker containers. Note: Replace `<project_name>` to your preference.
+3. Start all the docker containers. Note: Replace `<project_name>` to your preference.
 - `docker-compose -p <project_name> up -d`
 - For example, `docker-compose -p project1 up -d`
 
-9. Monitor the site creation progress by logging the `<project_name>_site-creator_1` container.
+4. Monitor the site creation progress by logging the `<project_name>_site-creator_1` container.
 - `docker logs <project_name>_site-creator_1 -f`
 - For example, `docker logs project1_site-creator_1 -f`
 - If you face `no such container` error, try with `docker logs project1-site-creator-1 -f`
 
-10. After the `<project_name>_site-creator_1` container exited, open `Google Chrome`, you can access ERPNext via `localhost:8000`.
+5. After the `<project_name>_site-creator_1` container exited, open `Google Chrome`, you can access ERPNext via `localhost:8000`.
 
-## Backup
-## Restore
+# Backup
+# Restore
 
 # For Developer
 
