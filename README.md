@@ -4,7 +4,7 @@
 ## 2. Most Used Languages
 ![Your Repository's Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=chiajunshen&theme=blue-green)
 ## 3. Contributors Badge
-![Your Repository's Stats](https://contrib.rocks/image?repo=chiajunshen/Python)
+![Your Repository's Stats](https://contrib.rocks/image?repo=chiajunshen/shrdc_custom_frappe_docker)
 ## 4. Random Joke Generator
 ![Jokes Card](https://readme-jokes.vercel.app/api)
 ## 5. Profile View Counter
