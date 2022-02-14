@@ -14,23 +14,23 @@
 
 ## 2. SHRDC Custom Frappe Docker
 1. Prerequisites:
-- Windows: Docker Desktop
-- Ubuntu: Docker Engine, Docker Compose
-- Mac: Docker Desktop
+    - Windows: Docker Desktop
+    - Ubuntu: Docker Engine, Docker Compose
+    - Mac: Docker Desktop
 
 2. Frappe Apps included:
-    1. ERPNext Version 12
-    2. Metabase Integration
-    3. Telegram Integration
-    4. Frepple Integration
-    5. Barcode SHRDC
-    6. Computerized Maintenance Management System (CMMS) SHRDC
+    - ERPNext Version 12
+    - Metabase Integration
+    - Telegram Integration
+    - Frepple Integration
+    - Barcode SHRDC
+    - Computerized Maintenance Management System (CMMS) SHRDC
 
 ## 3. Setup
 1. The setup guide is tested to work on `Windows 10`, `Ubuntu 18.04` and `macOS Mojave 10.14.6`
 2. Create a folder
     1. Windows/Mac
-        1. test
+        - test
     3. Ubuntu:
         1. test
 #### Ubuntu: create a new user then add to docker group, then open new project folder...
