@@ -3,22 +3,22 @@
 ### H3
 #### H4
 
-# For ERPNext User:
+# For ERPNext User
 
-# SHRDC Custom Frappe Docker
-- This is a Single Server Single Bench Production Docker setup.
-- Other setup guide:
-    - Production Setup:
-        - Single Server Multi Bench
-        - Multi Server Docker Swarm
-        3.Multi Server Kubernetes
+## 1. List of possible ERPNext docker setup
+- Production Setup: Single Server Single Bench (follow the guide below)
+- [Production Setup: Single Server Multi Bench](https://github.com/chiajunshen/shrdc_frappe_docker/blob/main/docs/multi-bench.md)
+- [Production Setup: Multi Server Docker Swarm](https://github.com/chiajunshen/shrdc_frappe_docker/blob/main/docs/docker-swarm.md)
+- [Production Setup: Multi Server Kubernetes](https://helm.erpnext.com/)
+- [Development Setup: Source code access with VSCode](https://github.com/chiajunshen/shrdc_frappe_docker/tree/main/development)
 
-2. Prerequisites:
+## 2. SHRDC Custom Frappe Docker
+1. Prerequisites:
     1. Windows: Docker Desktop
     2. Ubuntu: Docker Engine, Docker Compose
     3. Mac: Docker Desktop
 
-3. Frappe Apps included:
+2. Frappe Apps included:
     1. ERPNext Version 12
     2. Metabase Integration
     3. Telegram Integration
@@ -26,8 +26,13 @@
     5. Barcode SHRDC
     6. Computerized Maintenance Management System (CMMS) SHRDC
 
-
-### Setup
+## 3. Setup
+1. The setup guide is tested to work on `Windows 10`, `Ubuntu 18.04` and `macOS Mojave 10.14.6`
+2. Create a folder
+    1. Windows/Mac
+        1. test
+    3. Ubuntu:
+        1. test
 #### Ubuntu: create a new user then add to docker group, then open new project folder...
 - `sudo adduser frappe`
 - `su - frappe`
@@ -53,10 +58,10 @@
 
 6. After the `<project_name>_site-creator_1` container exited, you can access ERPNext via `mysite.localhost` or whatever you have set in the `.env` file.
 
-### Backup
-### Restore
+## Backup
+## Restore
 
-# For Developer:
+# For Developer
 
 ## 1. Introduction
 
