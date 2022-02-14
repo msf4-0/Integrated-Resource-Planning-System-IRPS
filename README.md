@@ -16,7 +16,7 @@
 </a>
 
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=chiajunshen/shrdc_custom_frappe_docker)
-![GitHub Contributors Image](https://contrib.rocks/image?repo=drayang/frepple)
+![GitHub Contributors Image](https://contrib.rocks/image?repo=drayang/erpnext-frepple)
 
 # H1
 ## H2
