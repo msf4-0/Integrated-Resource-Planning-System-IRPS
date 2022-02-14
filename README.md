@@ -10,7 +10,7 @@
 ## 5. Profile View Counter
 ![Profile View Counter](https://komarev.com/ghpvc/?username=chiajunshen)
 ### Repository View Counter - HITS
-![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https://github.com/chiajunshen/Python)
+![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https://github.com/chiajunshen/shrdc_custom_frappe_docker)
 
 # H1
 ## H2
