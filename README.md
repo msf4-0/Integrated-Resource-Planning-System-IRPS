@@ -94,10 +94,10 @@ docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=msf4-
 2. Copy `env-example` into `.env` by running `cp env-example .env`.
 
 ## 5. Start up
-1. The following commands should be executed on the `~/some/path/shrdc_custom_frappe_docker directory`
+1. The following commands should be executed on the `~/some/path/shrdc_custom_frappe_docker` directory
 2. `docker-compose -p <project_name> up -d`
 3. `docker logs <project_name>_site-creator_1 -f`
-    1. If you got a `no such container` error, you may need to change to `docker logs <project_name>-site-creator-1 -f`\
+    1. If you got a `no such container` error, you may need to change to `docker logs <project_name>-site-creator-1 -f`
 4. After the `site_creator` container exited, open a browser, you can access ERPNext on `localhost:8000`.
 
 # Contributors
