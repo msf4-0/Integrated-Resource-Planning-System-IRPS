@@ -14,9 +14,9 @@
 
 ## 2. SHRDC Custom Frappe Docker
 1. Prerequisites:
-    1. Windows: Docker Desktop
-    2. Ubuntu: Docker Engine, Docker Compose
-    3. Mac: Docker Desktop
+- Windows: Docker Desktop
+- Ubuntu: Docker Engine, Docker Compose
+- Mac: Docker Desktop
 
 2. Frappe Apps included:
     1. ERPNext Version 12
