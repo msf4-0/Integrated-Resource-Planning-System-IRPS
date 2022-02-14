@@ -1,3 +1,19 @@
+<a href="https://github.com/chiajunshen/shrdc_custom_frappe_docker/blob/master/LICENSE">
+    <img alt="GitHub" src="https://img.shields.io/github/license/chiajunshen/shrdc_custom_frappe_docker.svg?color=blue">
+</a>
+<a href="https://github.com/msf4-0/Integrated-Vision-Inspection-System/releases">
+    <img alt="Releases" src="https://img.shields.io/github/release/msf4-0/Integrated-Vision-Inspection-System?color=success" />
+</a>
+<a href="https://github.com/msf4-0/Integrated-Vision-Inspection-System/releases">
+    <img alt="Downloads" src="https://img.shields.io/github/downloads/msf4-0/Integrated-Vision-Inspection-System/total.svg?color=success" />
+</a>
+<a href="https://github.com/msf4-0/Integrated-Vision-Inspection-System/issues">
+      <img alt="Issues" src="https://img.shields.io/github/issues/msf4-0/Integrated-Vision-Inspection-System?color=blue" />
+</a>
+<a href="https://github.com/msf4-0/Integrated-Vision-Inspection-System/pulls">
+    <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/msf4-0/Integrated-Vision-Inspection-System?color=blue" />
+</a>
+
 # Top 5 Badges That Will Take Your GitHub Repository to the Next Level
 ## 1. GitHub Stats
 ![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=chiajunshen&show_icons=true)
