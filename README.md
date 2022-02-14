@@ -15,12 +15,6 @@
     <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/chiajunshen/shrdc_custom_frappe_docker?color=blue" />
 </a>
 
-# H1
-## H2
-### H3
-#### H4
-
-
 ## For ERPNext User
 
 ### 1. List of possible ERPNext docker setup
@@ -93,7 +87,18 @@
 5. After the `<project_name>_site-creator_1` container exited, open `Google Chrome`, you can access ERPNext via `localhost:8000`.
 
 ## Backup
+1. Assumptions:
+    1. You have a running instance of ERPNext in docker production container.
+2. Alternatives:
+    1. [Online Backup (Automatic)](https://docs.google.com/document/d/1nFbnYwB1hkFBeqMrb35IOHjo7M4PF9sRGHR08TtVJ6w/edit?usp=sharing)
+    2. [Local Backup (Manual)]()
+    3. [Local Backup (Automatic)]()
+
 ## Restore
+1. Assumptions:
+    1. You have your backup files on your pc (if you perform online backup, you can download the backup files onto your pc).
+    2. You have a running instance of ERPNext in docker production container in which you want to restore with the backup files.
+2. [Restore]()
 
 ## For Developer
 - [Reference: Customizing your own shrdc custom frappe docker](https://docs.google.com/document/d/1XxOYM_qhZ0RGI60YM82XHOkEzrn8ywXC98i354Donjc/edit)
