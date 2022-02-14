@@ -34,7 +34,7 @@
 
 2. For Windows and MacOS, create a folder.
 
-3. Open a terminal, navigate to the newly created folder.
+3. Open a Powershell terminal, navigate to the newly created folder.
 
 4. Go to `Section 5`.
 
