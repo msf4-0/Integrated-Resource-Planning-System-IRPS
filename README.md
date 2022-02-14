@@ -87,10 +87,17 @@ docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=msf4-
 ## 3. Push images to Docker Hub
 1. [Steps to create a Docker Hub, and push images to it.](https://docs.docker.com/get-started/04_sharing_app/)
 2. Possible troubleshoot:
-    1. When you face `denied: requested access to the resource is denied` when pushing images, run `docker login` and enter your credentials.
+    1. When you face `denied: requested access to the resource is denied` when pushing images, run `docker login` and enter your credentials. Then push image again.
 
-### 4. Configure `env-example`
-change DOCKER_USERNAME to the username of the Docker Hub in which you have pushed to images to
+## 4. (Optional) Configure `env-example`
+1. You may need to change the `DOCKER_USERNAME` in `.env` to the username of the Docker Hub account in which you have pushed your images to.
+
+## 5. Start up
+1. The following commands should be executed on the `~/some/path/shrdc_custom_frappe_docker directory`
+2. `docker-compose -p <project_name> up -d`
+3. `docker logs <project_name>_site-creator_1 -f`
+    1. If you got a `no such container` error, you may need to change to `docker logs <project_name>-site-creator-1 -f`\
+4. After the `site_creator` container exited, open a browser, you can access ERPNext on `localhost:8000`.
 
 # Contributors
 1. [Drayang Chua Kai Yang](https://github.com/Drayang)
