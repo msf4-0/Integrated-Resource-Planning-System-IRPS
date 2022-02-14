@@ -3,7 +3,7 @@
 ### H3
 #### H4
 
-## For ERPNext User:
+# For ERPNext User:
 
 ### SHRDC Custom Frappe Docker
 - Prerequisites: Docker Engine, Docker Compose
@@ -38,10 +38,9 @@
 ### Backup
 ### Restore
 
+# For Developer:
 
-## For Developer (get this done asap):
-
-### 1. Introduction
+## 1. Introduction
 
 - Fork this repo to build your own image with ERPNext and list of custom Frappe apps.
 - Change `nginx/Dockerfile` and add required apps. Refer comments in the file.
@@ -49,15 +48,15 @@
 
 Example file uses following apps:
 
-- https://github.com/chiajunshen/shrdc_frappe_metabase
-- https://github.com/chiajunshen/shrdc_erpnext_telegram
-- https://github.com/Drayang/ERPNext-Frepple
-- https://github.com/leexy0/barcode_shrdc
-- https://github.com/msf4-0/ERPNext_my_custom__maintenance
+- [Metabase Integration](https://github.com/chiajunshen/shrdc_frappe_metabase)
+- [Telegram Integration](https://github.com/chiajunshen/shrdc_erpnext_telegram)
+- [Frepple Integration](https://github.com/Drayang/ERPNext-Frepple)
+- [Barcode](https://github.com/leexy0/barcode_shrdc)
+- [Computerized Maintenance Management System CMMS](https://github.com/msf4-0/ERPNext_my_custom__maintenance)
 
-### 2. Build images
+## 2. Build images
 
-Execute from root of app repo
+Execute from root of app repo.
 
 For nginx:
 
@@ -65,8 +64,11 @@ For nginx:
 # For version-12
 docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=<github-username> -t custom-erpnext-nginx:v12 nginx
 
-# Example:
+# Example 1:
 docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=chiajunshen -t custom-erpnext-nginx:version-12 nginx
+
+# Example 2:
+docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=msf4-0 -t custom-erpnext-nginx:version-12 nginx
 ```
 
 For worker:
@@ -75,19 +77,22 @@ For worker:
 # For version-12
 docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=<github-username> -t custom-erpnext-worker:version-12 worker
 
-# Example:
+# Example 1:
 docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=chiajunshen -t custom-erpnext-worker:version-12 worker
+
+# Example 2:
+docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=msf4-0 -t custom-erpnext-worker:version-12 worker
 ```
 
-### 3. Push images to Docker Hub
-may face `denied: requested access to the resource is denied` error
-Execute from root of app repo: `docker login` log into the Docker Hub in which you want to push the images to
+## 3. Push images to Docker Hub
+1. [Steps to create a Docker Hub, and push images to it.](https://docs.docker.com/get-started/04_sharing_app/)
+2. Possible troubleshoot:
+    1. When you face `denied: requested access to the resource is denied` when pushing images, run `docker login` and enter your credentials.
 
 ### 4. Configure `env-example`
 change DOCKER_USERNAME to the username of the Docker Hub in which you have pushed to images to
 
-
-## Contributors
+# Contributors
 1. [Drayang Chua Kai Yang](https://github.com/Drayang)
 2. [Lee Xin Yue](https://github.com/leexy0)
 3. [Chia Jun Shen](https://github.com/chiajunshen)
