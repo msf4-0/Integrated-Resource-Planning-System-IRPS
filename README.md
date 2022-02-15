@@ -104,7 +104,7 @@
 1. Assumptions:
     1. You have your backup files on your pc (if you perform online backup, you can download the backup files onto your pc).
     2. You have a running instance of ERPNext in docker production container in which you want to restore with the backup files.
-2. [Restore]()
+2. [Restore](https://docs.google.com/document/d/1yG2N1isESsdtDdfH3aHykIrgD6lnVOLzK0zThKLreHA/edit?usp=sharing)
 
 ## For Developer
 - [Reference: Customizing your own shrdc custom frappe docker](https://docs.google.com/document/d/1XxOYM_qhZ0RGI60YM82XHOkEzrn8ywXC98i354Donjc/edit)
