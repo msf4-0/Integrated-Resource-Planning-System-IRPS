@@ -79,6 +79,7 @@
 3. Start all the docker containers. Note: Replace `<project_name>` to your preference.
 - `docker-compose -p <project_name> up -d`
 - For example, `docker-compose -p project1 up -d`
+- Error response from daemon: driver failed programming external connectivity on endpoint project1_mariadb_1 (e1c18c10af5d64e3bea9d69e7f891b2c6abdbf7710c7b55d93b9ee7e87991d0a): Bind for 0.0.0.0:3306 failed: port is already allocated
 
 4. Monitor the site creation progress by logging the `<project_name>_site-creator_1` container.
 - `docker logs <project_name>_site-creator_1 -f`
