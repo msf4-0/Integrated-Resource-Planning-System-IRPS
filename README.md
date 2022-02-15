@@ -72,7 +72,8 @@
 1. Clone this repo.
 - `git clone https://github.com/chiajunshen/shrdc_custom_frappe_docker.git`
 
-2. Copy environment variables from the `env-example` file into `.env` file.
+2. Navigate to the cloned folder and copy environment variables from the `env-example` file into `.env` file.
+- `cd shrdc_custom_frappe_docker`
 - `cp env-example .env`
 
 3. Start all the docker containers. Note: Replace `<project_name>` to your preference.
