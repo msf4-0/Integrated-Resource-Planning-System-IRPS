@@ -72,14 +72,12 @@
 1. Clone this repo.
 - `git clone https://github.com/chiajunshen/shrdc_custom_frappe_docker.git`
 
-2. Navigate to the cloned folder and copy environment variables from the `env-example` file into `.env` file.
-- `cd shrdc_custom_frappe_docker`
+2. Copy environment variables from the `env-example` file into `.env` file.
 - `cp env-example .env`
 
 3. Start all the docker containers. Note: Replace `<project_name>` to your preference.
 - `docker-compose -p <project_name> up -d`
 - For example, `docker-compose -p project1 up -d`
-- Error response from daemon: driver failed programming external connectivity on endpoint project1_mariadb_1 (e1c18c10af5d64e3bea9d69e7f891b2c6abdbf7710c7b55d93b9ee7e87991d0a): Bind for 0.0.0.0:3306 failed: port is already allocated
 
 4. Monitor the site creation progress by logging the `<project_name>_site-creator_1` container.
 - `docker logs <project_name>_site-creator_1 -f`
@@ -93,8 +91,8 @@
     1. You have a running instance of ERPNext in docker production container.
 2. Alternatives:
     1. [Online Backup (Automatic)](https://docs.google.com/document/d/1nFbnYwB1hkFBeqMrb35IOHjo7M4PF9sRGHR08TtVJ6w/edit?usp=sharing)
-    2. [Local Backup (Manual)]()
-    3. [Local Backup (Automatic)]()
+    2. [Local Backup (Manual)](https://docs.google.com/document/d/1x_-71FcPrrhF7vvuBX37G0No-TlPxyTQNcQWuN0f8cE/edit?usp=sharing)
+    3. [Local Backup (Automatic)](https://docs.google.com/document/d/1Is8J244t_-t4Ue4bbgPr0Y4P20-0wFKE5IkGEPYU-cE/edit?usp=sharing)
 
 ## Restore
 1. Assumptions:
