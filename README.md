@@ -87,6 +87,11 @@
 
 5. After the `<project_name>_site-creator_1` container exited, open `Google Chrome`, you can access ERPNext via `localhost:8000`.
 
+## Update Custom App
+1. Assumptions:
+    1. You have a running instance of ERPNext in docker production container.
+2. [How to update custom app](https://docs.google.com/document/d/1XCfNE1SoWK3MvIFHlthTw0GBUqfyAD66YM2hoO62CjU/edit?usp=sharing)
+
 ## Backup
 1. Assumptions:
     1. You have a running instance of ERPNext in docker production container.
