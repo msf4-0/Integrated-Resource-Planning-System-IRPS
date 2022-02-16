@@ -85,7 +85,7 @@
 - For example, `docker logs project1_site-creator_1 -f`
 - If you face `no such container` error, try with `docker logs project1-site-creator-1 -f`
 
-5. After the `<project_name>_site-creator_1` container display `Scheduler is disabled`, you can open `Google Chrome` and access ERPNext via `localhost:8000`.
+5. After the `<project_name>_site-creator_1` container display `Scheduler is disabled`, you can open `Google Chrome` and access ERPNext via `localhost:8000` or `127.0.0.1:8000`.
 
 ## Update Custom App
 1. Assumptions:
