@@ -69,15 +69,15 @@
 ### 5. Setup
 
 1. Clone this repo.
-- `git clone https://github.com/msf4-0/Integrated-Resource-Planning-System-IRPS.git`
+    - `git clone https://github.com/msf4-0/Integrated-Resource-Planning-System-IRPS.git`
 
 2. Navigate to the cloned folder.
-- `cd Integrated-Resource-Planning-System-IRPS`
+    - `cd Integrated-Resource-Planning-System-IRPS`
 
 3. In `enx-example`, you can change the `ERPNEXT_SERVER_PORT` and `MARIADB_SERVER_PORT` variables. Copy environment variables from the `env-example` file into `.env` file.
-- Upon successful setup, you can access ERPNext via port number `ERPNEXT_SERVER_PORT`
-- For Metabase Integration, you would need to connect to Mariadb via `MARIADB_SERVER_PORT`
-- `cp env-example .env`
+    - Upon successful setup, you can access ERPNext via port number `ERPNEXT_SERVER_PORT`
+    - For Metabase Integration, you would need to connect to Mariadb via `MARIADB_SERVER_PORT`
+    - `cp env-example .env`
 
 4. Start all the docker containers. Note: Replace `<project_name>` to your preference.
 - `docker-compose -p <project_name> up -d`
