@@ -69,10 +69,10 @@
 ### 5. Setup
 
 1. Clone this repo.
-- `git clone https://github.com/chiajunshen/shrdc_custom_frappe_docker.git`
+- `git clone https://github.com/msf4-0/Integrated-Resource-Planning-System-IRPS.git`
 
 2. Navigate to the cloned folder and copy environment variables from the `env-example` file into `.env` file.
-- `cd shrdc_custom_frappe_docker`
+- `cd Integrated-Resource-Planning-System-IRPS`
 - `cp env-example .env`
 
 3. Start all the docker containers. Note: Replace `<project_name>` to your preference.
@@ -131,10 +131,7 @@ For nginx:
 # For version-12
 docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=<github-username> -t custom-erpnext-nginx:v12 nginx
 
-# Example 1:
-docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=chiajunshen -t custom-erpnext-nginx:version-12 nginx
-
-# Example 2:
+# Example:
 docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=msf4-0 -t custom-erpnext-nginx:version-12 nginx
 ```
 
@@ -144,10 +141,7 @@ For worker:
 # For version-12
 docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=<github-username> -t custom-erpnext-worker:version-12 worker
 
-# Example 1:
-docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=chiajunshen -t custom-erpnext-worker:version-12 worker
-
-# Example 2:
+# Example:
 docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=msf4-0 -t custom-erpnext-worker:version-12 worker
 ```
 
