@@ -8,7 +8,7 @@ mkdir -p /home/frappe/frappe-bench/sites/assets
 cd /home/frappe/frappe-bench
 mkdir -p apps
 cd apps
-git clone --depth 1 https://github.com/${GITHUB_OWNER}/shrdc_frappe frappe ${FRAMEWORK_BRANCH}
+git clone --depth 1 https://github.com/chiajunshen/shrdc_frappe frappe ${FRAMEWORK_BRANCH}
 
 echo -e "frappe" > /home/frappe/frappe-bench/sites/apps.txt
 
