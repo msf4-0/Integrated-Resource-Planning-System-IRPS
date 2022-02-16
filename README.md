@@ -1,4 +1,4 @@
-# SHRDC Custom Frappe Docker
+# Integrated Resource Planning System IRPS
 <a href="https://github.com/chiajunshen/shrdc_custom_frappe_docker/blob/master/LICENSE">
     <img alt="GitHub" src="https://img.shields.io/github/license/chiajunshen/shrdc_custom_frappe_docker.svg?color=blue">
 </a>
@@ -24,19 +24,18 @@
 - [Production Setup: Multi Server Kubernetes](https://helm.erpnext.com/)
 - [Development Setup: Source code access with VSCode](https://github.com/chiajunshen/shrdc_frappe_docker/tree/main/development)
 
-### 2. SHRDC Custom Frappe Docker
+### 2. Integrated Resource Planning System IRPS
 1. Prerequisites:
     - Windows: Docker Desktop
     - Ubuntu: Docker Engine, Docker Compose
     - Mac: Docker Desktop
 
 2. Frappe Apps included:
-    - ERPNext Version 12
-    - Metabase Integration
-    - Telegram Integration
-    - Frepple Integration
-    - Barcode SHRDC
-    - Computerized Maintenance Management System (CMMS) SHRDC
+    - [ERPNext Version 12](https://github.com/frappe/erpnext)
+    - [Metabase Integration](https://github.com/chiajunshen/shrdc_frappe_metabase)
+    - [Telegram Integration](https://github.com/chiajunshen/shrdc_erpnext_telegram)
+    - [Frepple Integration](https://github.com/Drayang/ERPNext-Frepple)
+    - [Barcode Scanning System](https://github.com/leexy0/barcode_shrdc)
 
 3. For Windows & MacOS user, start from `Section 3`.
 4. For Ubuntu user, start from `Section 4`.
@@ -54,38 +53,42 @@
 1. Open a terminal.
 
 2. Create a user called `frappe`. (You can give a name of your preference to replace `frappe`)
-- `sudo adduser frappe`
+    - `sudo adduser frappe`
 
 3. You may be promted to give a password for the newly created user `frappe`. Remember this password, you will need it for the next step.
 
 4. Log into the user `frappe`
-- `su - frappe`
+    - `su - frappe`
 
 5. Create a folder called `frappe_docker`. Again, folder name is of your preference. Navigate into the new directory.
-- `mkdir frappe_docker`
-- `cd frappe_docker`
+    - `mkdir frappe_docker`
+    - `cd frappe_docker`
 
 6. Go to `Section 5`.
 
 ### 5. Setup
 
 1. Clone this repo.
-- `git clone https://github.com/chiajunshen/shrdc_custom_frappe_docker.git`
+    - `git clone https://github.com/msf4-0/Integrated-Resource-Planning-System-IRPS.git`
 
-2. Navigate to the cloned folder and copy environment variables from the `env-example` file into `.env` file.
-- `cd shrdc_custom_frappe_docker`
-- `cp env-example .env`
+2. Navigate to the cloned folder.
+    - `cd Integrated-Resource-Planning-System-IRPS`
 
-3. Start all the docker containers. Note: Replace `<project_name>` to your preference.
-- `docker-compose -p <project_name> up -d`
-- For example, `docker-compose -p project1 up -d`
+3. In `enx-example`, you can change the `ERPNEXT_SERVER_PORT` and `MARIADB_SERVER_PORT` variables. Copy environment variables from the `env-example` file into `.env` file.
+    - Upon successful setup, you can access ERPNext via port number `ERPNEXT_SERVER_PORT`
+    - For Metabase Integration, you would need to connect to Mariadb via `MARIADB_SERVER_PORT`
+    - `cp env-example .env`
 
-4. Monitor the site creation progress by logging the `<project_name>_site-creator_1` container.
-- `docker logs <project_name>_site-creator_1 -f`
-- For example, `docker logs project1_site-creator_1 -f`
-- If you face `no such container` error, try with `docker logs project1-site-creator-1 -f`
+4. Start all the docker containers. Note: Replace `<project_name>` to your preference.
+    - `docker-compose -p <project_name> up -d`
+    - For example, `docker-compose -p project1 up -d`
 
-5. After the `<project_name>_site-creator_1` container display `Scheduler is disabled`, you can open `Google Chrome` and access ERPNext via `localhost:8000`.
+5. Monitor the site creation progress by logging the `<project_name>_site-creator_1` container.
+    - `docker logs <project_name>_site-creator_1 -f`
+    - For example, `docker logs project1_site-creator_1 -f`
+    - If you face `no such container` error, try with `docker logs project1-site-creator-1 -f`
+
+6. After the `<project_name>_site-creator_1` container display `Scheduler is disabled`, you can open `Google Chrome` and access ERPNext via `localhost:8000` or `127.0.0.1:8000`.
 
 ## Update Custom App
 1. Assumptions:
@@ -120,8 +123,7 @@ Example file uses following apps:
 - [Metabase Integration](https://github.com/chiajunshen/shrdc_frappe_metabase)
 - [Telegram Integration](https://github.com/chiajunshen/shrdc_erpnext_telegram)
 - [Frepple Integration](https://github.com/Drayang/ERPNext-Frepple)
-- [Barcode SHRDC](https://github.com/leexy0/barcode_shrdc)
-- [Computerized Maintenance Management System (CMMS) SHRDC](https://github.com/msf4-0/ERPNext_my_custom__maintenance)
+- [Barcode Scanning System](https://github.com/leexy0/barcode_shrdc)
 
 ### 2. Build images
 
@@ -133,10 +135,7 @@ For nginx:
 # For version-12
 docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=<github-username> -t custom-erpnext-nginx:v12 nginx
 
-# Example 1:
-docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=chiajunshen -t custom-erpnext-nginx:version-12 nginx
-
-# Example 2:
+# Example:
 docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=msf4-0 -t custom-erpnext-nginx:version-12 nginx
 ```
 
@@ -146,10 +145,7 @@ For worker:
 # For version-12
 docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=<github-username> -t custom-erpnext-worker:version-12 worker
 
-# Example 1:
-docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=chiajunshen -t custom-erpnext-worker:version-12 worker
-
-# Example 2:
+# Example:
 docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=msf4-0 -t custom-erpnext-worker:version-12 worker
 ```
 
@@ -167,7 +163,8 @@ docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=msf4-
 2. `docker-compose -p <project_name> up -d`
 3. `docker logs <project_name>_site-creator_1 -f`
     1. If you got a `no such container` error, you may need to change to `docker logs <project_name>-site-creator-1 -f`
-4. After the `site_creator` container exited, open a browser, you can access ERPNext on `localhost:8000`.
+4. After the `site_creator` container exited, open a browser, you can access ERPNext on `localhost:8000` or `127.0.0.1:8000`.
+5. You can push the changes back to this repo (or your own repo if you forked one from this repo).
 
 ## Contributors
 1. [Drayang Chua Kai Yang](https://github.com/Drayang)
