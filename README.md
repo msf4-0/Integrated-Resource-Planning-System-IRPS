@@ -1,4 +1,4 @@
-# SHRDC Custom Frappe Docker
+# Integrated Resource Planning System IRPS
 <a href="https://github.com/chiajunshen/shrdc_custom_frappe_docker/blob/master/LICENSE">
     <img alt="GitHub" src="https://img.shields.io/github/license/chiajunshen/shrdc_custom_frappe_docker.svg?color=blue">
 </a>
@@ -24,7 +24,7 @@
 - [Production Setup: Multi Server Kubernetes](https://helm.erpnext.com/)
 - [Development Setup: Source code access with VSCode](https://github.com/chiajunshen/shrdc_frappe_docker/tree/main/development)
 
-### 2. SHRDC Custom Frappe Docker
+### 2. Integrated Resource Planning System IRPS
 1. Prerequisites:
     - Windows: Docker Desktop
     - Ubuntu: Docker Engine, Docker Compose
