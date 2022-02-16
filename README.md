@@ -31,12 +31,11 @@
     - Mac: Docker Desktop
 
 2. Frappe Apps included:
-    - ERPNext Version 12
-    - Metabase Integration
-    - Telegram Integration
-    - Frepple Integration
-    - Barcode SHRDC
-    - Computerized Maintenance Management System (CMMS) SHRDC
+    - [ERPNext Version 12](https://github.com/frappe/erpnext)
+    - [Metabase Integration](https://github.com/chiajunshen/shrdc_frappe_metabase)
+    - [Telegram Integration](https://github.com/chiajunshen/shrdc_erpnext_telegram)
+    - [Frepple Integration](https://github.com/Drayang/ERPNext-Frepple)
+    - [Barcode SHRDC](https://github.com/leexy0/barcode_shrdc)
 
 3. For Windows & MacOS user, start from `Section 3`.
 4. For Ubuntu user, start from `Section 4`.
@@ -121,7 +120,6 @@ Example file uses following apps:
 - [Telegram Integration](https://github.com/chiajunshen/shrdc_erpnext_telegram)
 - [Frepple Integration](https://github.com/Drayang/ERPNext-Frepple)
 - [Barcode SHRDC](https://github.com/leexy0/barcode_shrdc)
-- [Computerized Maintenance Management System (CMMS) SHRDC](https://github.com/msf4-0/ERPNext_my_custom__maintenance)
 
 ### 2. Build images
 
