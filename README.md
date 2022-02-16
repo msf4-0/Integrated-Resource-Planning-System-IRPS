@@ -71,20 +71,24 @@
 1. Clone this repo.
 - `git clone https://github.com/msf4-0/Integrated-Resource-Planning-System-IRPS.git`
 
-2. Navigate to the cloned folder and copy environment variables from the `env-example` file into `.env` file.
+2. Navigate to the cloned folder.
 - `cd Integrated-Resource-Planning-System-IRPS`
+
+3. In `enx-example`, you can change the `ERPNEXT_SERVER_PORT` and `MARIADB_SERVER_PORT` variables. Copy environment variables from the `env-example` file into `.env` file.
+- Upon successful setup, you can access ERPNext via port number `ERPNEXT_SERVER_PORT`
+- For Metabase Integration, you would need to connect to Mariadb via `MARIADB_SERVER_PORT`
 - `cp env-example .env`
 
-3. Start all the docker containers. Note: Replace `<project_name>` to your preference.
+4. Start all the docker containers. Note: Replace `<project_name>` to your preference.
 - `docker-compose -p <project_name> up -d`
 - For example, `docker-compose -p project1 up -d`
 
-4. Monitor the site creation progress by logging the `<project_name>_site-creator_1` container.
+5. Monitor the site creation progress by logging the `<project_name>_site-creator_1` container.
 - `docker logs <project_name>_site-creator_1 -f`
 - For example, `docker logs project1_site-creator_1 -f`
 - If you face `no such container` error, try with `docker logs project1-site-creator-1 -f`
 
-5. After the `<project_name>_site-creator_1` container display `Scheduler is disabled`, you can open `Google Chrome` and access ERPNext via `localhost:8000` or `127.0.0.1:8000`.
+6. After the `<project_name>_site-creator_1` container display `Scheduler is disabled`, you can open `Google Chrome` and access ERPNext via `localhost:8000` or `127.0.0.1:8000`.
 
 ## Update Custom App
 1. Assumptions:
