@@ -53,16 +53,16 @@
 1. Open a terminal.
 
 2. Create a user called `frappe`. (You can give a name of your preference to replace `frappe`)
-- `sudo adduser frappe`
+    - `sudo adduser frappe`
 
 3. You may be promted to give a password for the newly created user `frappe`. Remember this password, you will need it for the next step.
 
 4. Log into the user `frappe`
-- `su - frappe`
+    - `su - frappe`
 
 5. Create a folder called `frappe_docker`. Again, folder name is of your preference. Navigate into the new directory.
-- `mkdir frappe_docker`
-- `cd frappe_docker`
+    - `mkdir frappe_docker`
+    - `cd frappe_docker`
 
 6. Go to `Section 5`.
 
@@ -80,13 +80,13 @@
     - `cp env-example .env`
 
 4. Start all the docker containers. Note: Replace `<project_name>` to your preference.
-- `docker-compose -p <project_name> up -d`
-- For example, `docker-compose -p project1 up -d`
+    - `docker-compose -p <project_name> up -d`
+    - For example, `docker-compose -p project1 up -d`
 
 5. Monitor the site creation progress by logging the `<project_name>_site-creator_1` container.
-- `docker logs <project_name>_site-creator_1 -f`
-- For example, `docker logs project1_site-creator_1 -f`
-- If you face `no such container` error, try with `docker logs project1-site-creator-1 -f`
+    - `docker logs <project_name>_site-creator_1 -f`
+    - For example, `docker logs project1_site-creator_1 -f`
+    - If you face `no such container` error, try with `docker logs project1-site-creator-1 -f`
 
 6. After the `<project_name>_site-creator_1` container display `Scheduler is disabled`, you can open `Google Chrome` and access ERPNext via `localhost:8000` or `127.0.0.1:8000`.
 
@@ -120,10 +120,10 @@
 
 Example file uses following apps:
 
-- [Metabase Integration](https://github.com/chiajunshen/shrdc_frappe_metabase)
-- [Telegram Integration](https://github.com/chiajunshen/shrdc_erpnext_telegram)
-- [Frepple Integration](https://github.com/Drayang/ERPNext-Frepple)
-- [Barcode Scanning System](https://github.com/leexy0/barcode_shrdc)
+    - [Metabase Integration](https://github.com/chiajunshen/shrdc_frappe_metabase)
+    - [Telegram Integration](https://github.com/chiajunshen/shrdc_erpnext_telegram)
+    - [Frepple Integration](https://github.com/Drayang/ERPNext-Frepple)
+    - [Barcode Scanning System](https://github.com/leexy0/barcode_shrdc)
 
 ### 2. Build images
 
