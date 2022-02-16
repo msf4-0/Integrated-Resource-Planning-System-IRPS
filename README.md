@@ -120,10 +120,10 @@
 
 Example file uses following apps:
 
-    - [Metabase Integration](https://github.com/chiajunshen/shrdc_frappe_metabase)
-    - [Telegram Integration](https://github.com/chiajunshen/shrdc_erpnext_telegram)
-    - [Frepple Integration](https://github.com/Drayang/ERPNext-Frepple)
-    - [Barcode Scanning System](https://github.com/leexy0/barcode_shrdc)
+- [Metabase Integration](https://github.com/chiajunshen/shrdc_frappe_metabase)
+- [Telegram Integration](https://github.com/chiajunshen/shrdc_erpnext_telegram)
+- [Frepple Integration](https://github.com/Drayang/ERPNext-Frepple)
+- [Barcode Scanning System](https://github.com/leexy0/barcode_shrdc)
 
 ### 2. Build images
 
