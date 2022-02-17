@@ -90,6 +90,22 @@
 
 6. After the `<project_name>_site-creator_1` container display `Scheduler is disabled`, you can open `Google Chrome` and access ERPNext via `localhost:8000` or `127.0.0.1:8000`.
 
+### 6. Stopping Docker Containers
+1. To stop all the docker containers related to your `<peoject-name`> project
+    - In the `Integrated-Resource-Planning-System-IRPS` directory, run `docker-compose -p <project-name> stop`
+    - For example, `docker-compose -p project1 stop`
+
+### 7. Starting Docker Containers
+1. To start up all the docker containers related to your `<peoject-name`> project
+    - In the `Integrated-Resource-Planning-System-IRPS` directory, run `docker-compose -p <project-name> start`
+    - For example, `docker-compose -p project1 start`
+
+### 8. Deleting Docker Containers
+1. To remove all the docker containers related to your `<peoject-name`> project
+    - Run `docker-compose -p <project-name> down`
+    - Run `docker-compose -p <project-name> down -v` to remove the related Docker Volume
+    - For example, `docker-compose -p project1 down -v`
+
 ## Update Custom App
 1. Assumptions:
     1. You have a running instance of ERPNext in docker production container.
