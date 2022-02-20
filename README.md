@@ -16,13 +16,20 @@
 </a>
 
 <br>
+
+# ERPNext Home Page
 ![ERPNext Home Page](https://github.com/msf4-0/Integrated-Resource-Planning-System-IRPS/blob/master/images/ERPNext%20Home%20Page.png)
+
 <br>
 
-![Frepple Integration](./images/Frepple Integration.png)
+# Frepple Integration
+![Frepple Integration](https://github.com/msf4-0/Integrated-Resource-Planning-System-IRPS/blob/master/images/Frepple%20Integration.png)
+
 <br>
 
-![Barcode Scanning System](./images/Barcode Scanning System.png)
+# Barcode Scanning System
+![Barcode Scanning System](https://github.com/msf4-0/Integrated-Resource-Planning-System-IRPS/blob/master/images/Barcode%20Scanning%20System.png)
+
 <br>
 
 ## For ERPNext User
