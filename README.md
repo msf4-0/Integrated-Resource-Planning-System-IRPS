@@ -199,7 +199,6 @@ docker build --build-arg=FRAPPE_BRANCH=version-12 --build-arg=GITHUB_OWNER=msf4-
 4. After the `site_creator` container exited, open a browser, you can access ERPNext on `localhost:8000` or `127.0.0.1:8000`.
 5. You can push the changes back to this repo (or your own repo if you forked one from this repo).
 
-## Contributors
-1. [Drayang Chua Kai Yang](https://github.com/Drayang)
-2. [Lee Xin Yue](https://github.com/leexy0)
-3. [Chia Jun Shen](https://github.com/chiajunshen)
+## License
+
+This software is licensed under the [GNU GPLv3 LICENSE](/LICENSE) © [Selangor Human Resource Development Centre](http://www.shrdc.org.my/). 2021.  All Rights Reserved.
