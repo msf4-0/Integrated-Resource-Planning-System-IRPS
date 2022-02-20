@@ -16,8 +16,7 @@
 </a>
 
 <br>
-
-![ERPNext Home Page](images/ERPNext Home Page.png?raw=true "Title")
+![ERPNext Home Page](https://github.com/msf4-0/Integrated-Resource-Planning-System-IRPS/blob/master/images/ERPNext%20Home%20Page.png)
 <br>
 
 ![Frepple Integration](./images/Frepple Integration.png)
