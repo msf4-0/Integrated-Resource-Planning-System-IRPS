@@ -15,6 +15,17 @@
     <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/chiajunshen/shrdc_custom_frappe_docker?color=blue" />
 </a>
 
+<br>
+
+![ERPNext Home Page](images/ERPNext Home Page.png?raw=true "Title")
+<br>
+
+![Frepple Integration](./images/Frepple Integration.png)
+<br>
+
+![Barcode Scanning System](./images/Barcode Scanning System.png)
+<br>
+
 ## For ERPNext User
 
 ### 1. List of possible ERPNext docker setup
