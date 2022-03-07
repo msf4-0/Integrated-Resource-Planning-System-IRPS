@@ -107,6 +107,10 @@
 
 6. After the `<project_name>_site-creator_1` container display `Scheduler is disabled`, you can open `Google Chrome` and access ERPNext via `localhost:8000` or `127.0.0.1:8000`.
 
+7. Default credentials.
+    - Username: `Administrator`
+    - Password: `admin`
+
 ### 6. Stopping Docker Containers
 1. To stop all the docker containers related to your `<peoject-name`> project
     - In the `Integrated-Resource-Planning-System-IRPS` directory, run `docker-compose -p <project-name> stop`
